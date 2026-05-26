@@ -53,6 +53,8 @@ propex/
 └── README.md
 ```
 
+
+
 ## Setup
 
 ### 1) Database
@@ -121,3 +123,14 @@ python -m flask --app app:create_app run --port 5001
 - The public auth modal/login page are UI stubs; backend auth endpoints exist in the Flask service but are not wired to the React UI.
 - Hero slides, featured selections, and listing settings are stored as JSON in backend/data.
 - The ML model uses sample data for demonstration and should be replaced with real training data for production.
+
+## Screenshots
+
+![Screenshot 1](Screenshots/1.png)
+![Screenshot 2](Screenshots/2.png)
+![Screenshot 3](Screenshots/3.png)
+![Screenshot 4](Screenshots/4.png)
+![Screenshot 5](Screenshots/5.png)
+![Screenshot 6](Screenshots/6.png)
+![Screenshot 7](Screenshots/7.png)
+![Screenshot 8](Screenshots/8.png)
