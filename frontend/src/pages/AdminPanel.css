@@ -1,0 +1,257 @@
+.admin-container {
+  padding: 60px 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+  background-color: #f4f7f6;
+  font-family: 'Inter', sans-serif;
+}
+
+.admin-container h1 {
+  text-align: center;
+  color: #1a3c18;
+  margin-bottom: 40px;
+  font-weight: 800;
+  font-size: 2.5rem;
+  letter-spacing: -0.5px;
+}
+
+/* Auth Card */
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.auth-card {
+  background: white;
+  width: 100%;
+  max-width: 450px;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  border-top: 4px solid #ff6b35;
+}
+
+.auth-card h2 {
+  text-align: center;
+  color: #2d5a27;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+.auth-card .btn-primary {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+/* Forms */
+.admin-form-card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  margin-bottom: 50px;
+  border: 1px solid #eaeaea;
+}
+
+.admin-form-card h2 {
+  color: #2d5a27;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+.form-info {
+  font-size: 0.95em;
+  color: #888;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.form-row {
+  display: flex;
+  gap: 24px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid #ddd;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: #fafafa;
+}
+
+.form-group input:focus, 
+.form-group select:focus, 
+.form-group textarea:focus {
+  border-color: #2d5a27;
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0 0 0 3px rgba(45, 90, 39, 0.1);
+}
+
+.form-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  border-top: 1px solid #eee;
+  padding-top: 25px;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 12px 28px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: none;
+  cursor: pointer;
+  font-size: 1.05rem;
+}
+
+.btn-primary {
+  background-color: #2d5a27;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #1e3c1a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(45, 90, 39, 0.2);
+}
+
+.btn-secondary {
+  background-color: #e2e8f0;
+  color: #4a5568;
+}
+
+.btn-secondary:hover {
+  background-color: #cbd5e1;
+  transform: translateY(-2px);
+}
+
+/* Listings Grid */
+.properties-list h2 {
+  color: #1a3c18;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #ff6b35;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.admin-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.admin-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #f0f0f0;
+}
+
+.admin-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+.admin-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.admin-card-body {
+  padding: 24px;
+}
+
+.admin-card-body h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.price-tag {
+  color: #ff6b35;
+  font-weight: 700;
+  font-size: 1.15rem;
+  margin-bottom: 15px;
+}
+
+.desc-preview {
+  color: #666;
+  font-size: 0.95em;
+  line-height: 1.5;
+  margin: 15px 0;
+  height: 65px;
+  overflow: hidden;
+}
+
+.card-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.btn-edit, .btn-delete {
+  padding: 10px 15px;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.2s;
+  border: none;
+  cursor: pointer;
+  flex: 1;
+}
+
+.btn-edit {
+  background-color: #f7fafc;
+  color: #4a5568;
+  border: 1px solid #e2e8f0;
+}
+
+.btn-edit:hover {
+  background-color: #ebf4ff;
+  color: #3182ce;
+  border-color: #bee3f8;
+}
+
+.btn-delete {
+  background-color: #fff5f5;
+  color: #e53e3e;
+  border: 1px solid #fed7d7;
+}
+
+.btn-delete:hover {
+  background-color: #fed7d7;
+  color: #c53030;
+}

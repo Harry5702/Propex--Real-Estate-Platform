@@ -1,0 +1,344 @@
+/* ═══════════════════════════════════════════════════════════
+   LISTINGS PAGE — Enhanced Styles
+═══════════════════════════════════════════════════════════ */
+
+.listings-page {
+  min-height: 100vh;
+  background: #f8f9f7;
+}
+
+/* ── Hero Banner ──────────────────────────────────────────── */
+.listings-hero {
+  position: relative;
+  padding: 80px 20px 60px;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.listings-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(13, 31, 13, 0.8), rgba(26, 54, 32, 0.75));
+}
+
+.listings-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.listings-eyebrow {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  padding: 6px 18px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 18px;
+}
+
+.listings-hero-content h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.listings-hero-content p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+.listings-hero-stats {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.lh-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.lh-stat strong {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: white;
+}
+
+.lh-stat span {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+}
+
+/* ── Category Tabs ────────────────────────────────────────── */
+.category-tabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 28px 0 20px;
+  justify-content: flex-start;
+}
+
+.category-tab {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 10px 18px;
+  border-radius: 12px;
+  border: 2px solid #e5e7eb;
+  background: white;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #6b7280;
+  transition: all 0.25s ease;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.category-tab:hover {
+  border-color: #4a7c59;
+  color: #2d5a27;
+  background: rgba(74, 124, 89, 0.06);
+  transform: translateY(-1px);
+}
+
+.category-tab.active {
+  border-color: #2d5a27;
+  background: linear-gradient(135deg, rgba(45, 90, 39, 0.1), rgba(74, 124, 89, 0.08));
+  color: #2d5a27;
+  box-shadow: 0 2px 8px rgba(45, 90, 39, 0.15);
+}
+
+.category-icon {
+  font-size: 16px;
+}
+
+.category-label {
+  font-weight: 700;
+}
+
+.category-count {
+  background: rgba(45, 90, 39, 0.12);
+  color: #2d5a27;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 20px;
+  min-width: 22px;
+  text-align: center;
+}
+
+.category-tab.active .category-count {
+  background: #2d5a27;
+  color: white;
+}
+
+/* ── Results bar ──────────────────────────────────────────── */
+.listings-results-bar {
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-weight: 500;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* ── Properties Grid ──────────────────────────────────────── */
+.properties-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  padding-bottom: 60px;
+}
+
+.property-card.listing-card {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07), 0 1px 3px rgba(0,0,0,0.04);
+  border: 1px solid rgba(0,0,0,0.04);
+  cursor: pointer;
+  transition: all 0.35s cubic-bezier(0.4,0,0.2,1);
+}
+
+.property-card.listing-card:hover {
+  box-shadow: 0 16px 40px rgba(45, 90, 39, 0.14), 0 4px 10px rgba(0,0,0,0.06);
+}
+
+/* Image */
+.property-image.listing-image {
+  position: relative;
+  height: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.property-image.listing-image img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.listing-card:hover .property-image.listing-image img {
+  transform: scale(1.06);
+}
+
+.property-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.property-type-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0,0,0,0.45);
+  backdrop-filter: blur(8px);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+/* Info section */
+.property-info.listing-info {
+  padding: 18px;
+}
+
+.property-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1a2e1a;
+  margin-bottom: 4px;
+  line-height: 1.35;
+  transition: color 0.2s;
+}
+
+.listing-card:hover .property-title {
+  color: #2d5a27;
+}
+
+.property-price.listing-price {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #2d5a27;
+  margin-bottom: 6px;
+}
+
+.property-location {
+  font-size: 0.82rem;
+  color: #6b7280;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.property-features {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8rem;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.feature-icon {
+  font-size: 14px;
+}
+
+/* ── Empty State ──────────────────────────────────────────── */
+.listings-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 20px;
+  color: #6b7280;
+}
+
+.listings-empty h3 {
+  color: #374151;
+  margin-bottom: 8px;
+  font-size: 1.25rem;
+}
+
+/* ── Loading Skeleton ─────────────────────────────────────── */
+.listings-skeleton-card {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+}
+
+.listings-skeleton-img {
+  height: 210px;
+  background: linear-gradient(90deg, #f3f4f6 25%, #e5e7eb 50%, #f3f4f6 75%);
+  background-size: 200% 100%;
+  animation: skLoad 1.5s infinite;
+}
+
+.listings-skeleton {
+  background: linear-gradient(90deg, #f3f4f6 25%, #e5e7eb 50%, #f3f4f6 75%);
+  background-size: 200% 100%;
+  animation: skLoad 1.5s infinite;
+  border-radius: 6px;
+}
+
+@keyframes skLoad {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .listings-hero-content h1 {
+    font-size: 1.9rem;
+  }
+
+  .category-tabs {
+    gap: 8px;
+  }
+
+  .category-tab {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+
+  .properties-grid {
+    grid-template-columns: 1fr;
+    max-width: 440px;
+    margin: 0 auto;
+  }
+
+  .listings-hero-stats {
+    gap: 20px;
+  }
+}

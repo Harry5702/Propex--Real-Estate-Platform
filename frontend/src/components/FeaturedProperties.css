@@ -1,0 +1,324 @@
+/* ═══════════════════════════════════════════════════════════
+   FEATURED PROPERTIES — Enhanced Styles
+═══════════════════════════════════════════════════════════ */
+
+.featured-properties {
+  background: linear-gradient(180deg, #ffffff 0%, #f8f9f7 100%);
+}
+
+/* Section Header */
+.fp-section-eyebrow {
+  display: inline-block;
+  background: linear-gradient(135deg, rgba(45, 90, 39, 0.1), rgba(74, 124, 89, 0.08));
+  border: 1px solid rgba(45, 90, 39, 0.2);
+  color: var(--primary-green);
+  padding: 6px 18px;
+  border-radius: 50px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-bottom: 14px;
+}
+
+.fp-section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--charcoal);
+  margin-bottom: 14px;
+  letter-spacing: -0.5px;
+}
+
+.fp-section-desc {
+  font-size: 1.1rem;
+  color: var(--medium-gray);
+  max-width: 580px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Card */
+.property-card.fp-card {
+  background: var(--white);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07), 0 1px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.property-card.fp-card:hover {
+  box-shadow: 0 20px 50px rgba(45, 90, 39, 0.15), 0 4px 12px rgba(0,0,0,0.06);
+}
+
+/* Image section */
+.property-image.fp-image {
+  position: relative;
+  height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.property-image.fp-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+  transition: transform 0.5s ease;
+}
+
+.fp-card:hover .property-image.fp-image img {
+  transform: scale(1.06);
+}
+
+.fp-icon-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Image overlay gradient */
+.fp-img-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: linear-gradient(to top, rgba(0,0,0,0.3), transparent);
+  pointer-events: none;
+}
+
+/* Badges */
+.fp-badges {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: 4;
+}
+
+.fp-type-badge {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.fp-hot-badge {
+  background: linear-gradient(135deg, #ff6b35, #d4af37);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+/* Price reveal on hover */
+.fp-price-reveal {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+  color: white;
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+  z-index: 4;
+}
+
+.fp-card:hover .fp-price-reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Info section */
+.property-info.fp-info {
+  padding: 1.4rem;
+}
+
+.property-title.fp-title {
+  color: var(--charcoal);
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  line-height: 1.3;
+  transition: color 0.2s;
+}
+
+.fp-card:hover .property-title.fp-title {
+  color: var(--primary-green);
+}
+
+.property-location.fp-location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--medium-gray);
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.property-location.fp-location svg {
+  color: var(--accent-orange);
+  flex-shrink: 0;
+}
+
+/* Details row */
+.property-details.fp-details {
+  display: flex;
+  gap: 0;
+  margin-bottom: 1.2rem;
+  padding: 0.9rem 0;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.property-details.fp-details .detail-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.8rem;
+  color: var(--medium-gray);
+  font-weight: 500;
+  position: relative;
+}
+
+.property-details.fp-details .detail-item + .detail-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 20%;
+  height: 60%;
+  width: 1px;
+  background: #e5e7eb;
+}
+
+.property-details.fp-details .detail-item svg {
+  color: var(--primary-green);
+}
+
+/* Footer */
+.property-footer.fp-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.property-price.fp-price {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--primary-green);
+  line-height: 1;
+}
+
+.price-unit {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--medium-gray);
+  vertical-align: middle;
+}
+
+.view-btn.fp-view-btn {
+  padding: 8px 18px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.25s;
+}
+
+/* CTA area */
+.fp-cta {
+  margin-top: 3rem;
+}
+
+.fp-view-all-btn {
+  padding: 14px 36px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 50px;
+}
+
+/* Loading skeleton */
+.fp-skeleton-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 4rem;
+}
+
+.fp-skeleton-card {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+.fp-skeleton-img {
+  height: 230px;
+}
+
+.fp-skeleton {
+  background: linear-gradient(90deg, #f3f4f6 25%, #e5e7eb 50%, #f3f4f6 75%);
+  background-size: 200% 100%;
+  animation: skeletonAnim 1.5s infinite;
+}
+
+@keyframes skeletonAnim {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Empty state */
+.fp-empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--medium-gray);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .fp-section-title {
+    font-size: 1.9rem;
+  }
+
+  .properties-grid.grid.grid-3 {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+    margin: 0 auto 4rem;
+  }
+
+  .property-details.fp-details {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .property-footer.fp-footer {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+
+  .view-btn.fp-view-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

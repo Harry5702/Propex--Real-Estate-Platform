@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Modern Luxury Villa",
+    "subtitle": "Experience premium living in the heart of Islamabad",
+    "price": "PKR 4.5 Crore",
+    "location": "DHA Phase 6, Islamabad",
+    "features": [
+      "4 Beds",
+      "3 Baths",
+      "3",
+      "200 sq ft"
+    ],
+    "gradient": "linear-gradient(135deg, #2d5a27, #4a7c59)",
+    "image_url": "http://localhost:5000/uploads/b48f203c-9d9b-4d49-96e5-f8bff48ed392.jpg",
+    "icon": "🏡"
+  },
+  {
+    "id": 2,
+    "title": "Premium Penthouse",
+    "subtitle": "Sky-high living with panoramic city views",
+    "price": "PKR 8 Crore",
+    "location": "Bahria Town, Rawalpindi",
+    "features": [
+      "3 Beds",
+      "2 Baths",
+      "2",
+      "100 sq ft"
+    ],
+    "gradient": "linear-gradient(135deg, #ff6b35, #d4af37)",
+    "image_url": "http://localhost:5000/uploads/26215e1e-1ddb-44c1-836f-33fa3ac7b19e.jpg",
+    "icon": "🏢"
+  },
+  {
+    "id": 3,
+    "title": "Luxury Apartment",
+    "subtitle": "Contemporary design meets elegant comfort",
+    "price": "PKR 2.5 Crore",
+    "location": "F-10, Islamabad",
+    "features": [
+      "2 Beds",
+      "2 Baths",
+      "1",
+      "800 sq ft"
+    ],
+    "gradient": "linear-gradient(135deg, #4a7c59, #2d5a27)",
+    "image_url": "http://localhost:5000/uploads/889dc3a7-1583-4dda-bf61-7edefda53be9.jpg",
+    "icon": "🏠"
+  }
+]
